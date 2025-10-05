@@ -1,0 +1,239 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid black;
+  width: 600px;
+  height: auto;
+  padding: 2.5rem 1.5rem;
+  gap: 2.5rem;
+  border-radius: 1.5rem;
+  background-color: white;
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+}
+
+.para {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 800;
+  color: cornflowerblue;
+}
+
+.theme-toggle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.text {
+  font-size: 1.25rem;
+}
+
+.checkbox {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#copy-btn {
+  width: 65%;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.small-para {
+  font-size: 1.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  font-family: "Montserrat", sans-serif;
+  height: 45px;
+  padding-left: .5rem;
+  box-shadow: 0 0 0 1.5px #2b2c37, 0 0 25px -17px #000;
+  border: 0;
+  border-radius: 12px;
+  outline: none;
+  transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+  cursor: text;
+  z-index: 0;
+}
+
+.input::placeholder {
+  color: #bdbecb;
+}
+
+.input:hover {
+  box-shadow: 0 0 0 2.5px #2f303d, 0px 0px 25px -15px #000;
+}
+
+.input:active {
+  transform: scale(0.95);
+}
+
+.input:focus {
+  box-shadow: 0 0 0 2.5px #2f303d;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #725AC1;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #725AC1;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #725AC1;
+}
+
+button:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #725AC1;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.light-mode {
+  background-color: whitesmoke;
+  color: black;
+}
+
+body {
+  transition: background-color 0.5 color 0.5s;
+}
+
+@media screen and (max-width: 1024px) {
+  .section {
+    width: 500px;
+    padding: 2rem 1rem;
+  }
+  .para {
+    font-size: 2.5rem;
+  }
+  .form {
+    gap: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    width: 400px;
+    padding: 1.75rem 0.9rem;
+  }
+  .para {
+    font-size: 2rem;
+  }
+  .form {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  #copy-btn {
+    width: 55%;
+  }
+  .small-para {
+    font-size: 1.5rem;
+  }
+  .history-list {
+    gap: 1.5rem;
+  }
+  .text {
+    font-size: 1.15rem;
+  }
+  .checkbox {
+    width: 1.15rem;
+    height: 1.15rem;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .section {
+    width: 260px;
+    padding: 1.75rem 0.8rem;
+  }
+  .para {
+    font-size: 1.5rem;
+  }
+  .form {
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+  #copy-btn {
+    width: 50%;
+  }
+  button {
+    font-size: 1rem;
+  }
+  .small-para {
+    font-size: 1.25rem;
+  }
+  #result-text {
+    font-size: 0.85rem;
+  }
+  .text {
+    font-size: 1rem;
+  }
+  .checkbox {
+    width: 1rem;
+    height: 1rem;
+  }
+}
