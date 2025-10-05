@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URL Shortener App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <main class="main">
+        <section id="section" class="section">
+          
+          <h1 class="para">Url Shortener App</h1>
+          
+          <form id="form" class="form">
+            <input class="input" type="url" id="get-url-input" placeholder="Enter your long URL here..." required>
+            <button type="submit" id="shorten-btn">Shorten</button>
+            <button type="reset" id="clear-btn">Clear</button>
+          </form>
+      
+          <div class="result-container">
+            <p id="result-text">Your shortened URL will appear here</p>
+            <button id="copy-btn">Copy</button>
+          </div>
+      
+          <div class="history" id="history-list">
+            <h2 class="small-para">History</h2>
+          </div>
+      
+          <div class="theme-toggle">
+            <label class="text" for="mode">Dark Mode</label>
+            <input class="checkbox" type="checkbox" id="mode">
+          </div>
+        </section>
+    </main>
+    <script src="java.js"></script>
+</body>
+</html>
